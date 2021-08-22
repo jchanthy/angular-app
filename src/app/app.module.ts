@@ -9,7 +9,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import {MatIconModule} from '@angular/material/icon';
 import {BroadcastService} from './services/broadcast.service';
-import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [

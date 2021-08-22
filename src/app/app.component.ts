@@ -1,7 +1,9 @@
 import {Component, ViewChild} from '@angular/core';
 import {MatSidenav} from '@angular/material/sidenav';
 import {BroadcastService, EventKeys} from './services/broadcast.service';
-// @ts-ignore
+import * as _ from 'underscore';
+
+
 
 @Component({
   selector: 'app-root',
@@ -16,8 +18,8 @@ export class AppComponent {
   constructor(broadCastService: BroadcastService) {
     _.bindAll(this, 'onLoginClicked');
 
-    broadCastService.on(EventKeys.LOGIN_BUTTON_CLICKED)
-      .subscribe(this.onLoginClicked);
+    // broadCastService.on(EventKeys.LOGIN_BUTTON_CLICKED)
+    //   .subscribe(this.onLoginClicked);
 
   }
 
